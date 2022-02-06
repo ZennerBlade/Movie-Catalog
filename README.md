@@ -8,6 +8,10 @@ Project is built with CRA with Typescript
 
 In the project directory, you can run:
 
+### `npm i`
+
+Installs all dependencies
+
 ### `npm start`
 
 Runs the app in the development mode.\
