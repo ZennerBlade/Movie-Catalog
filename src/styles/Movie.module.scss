@@ -1,0 +1,49 @@
+@import './Mixins.scss';
+@import './Variables.scss';
+
+.container {
+    @include flexWithDir(column);
+    @include flexCenter();
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.header {
+    color: $darkColor;
+    flex-grow: 1;
+    @include flexCenter();
+    gap: 1rem;
+}
+
+.section {
+    @include flexWithDir(row);
+    gap: 2rem;
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.content {
+    @include flexWithDir(column);
+    max-width: 35vw;
+}
+
+.image {
+    max-height: $cardHeight;
+}
+
+.arrow {
+    color: blue;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 590px){
+    .content {
+        max-width: 100%;
+    }
+
+    .section {
+        justify-content: center;
+    }
+}

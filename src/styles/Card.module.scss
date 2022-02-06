@@ -1,0 +1,30 @@
+@import './Mixins.scss';
+@import './Variables.scss';
+
+.blurBg {
+    -webkit-filter: blur(5px) brightness(50%);
+}
+
+.cardConatiner {
+    position: relative;
+}
+
+.cardImage {
+  width: $cardWidth;
+  height: $cardHeight;
+  object-fit: cover;
+  border-radius: 5%;
+  &:hover {
+    @extend .blurBg;
+  }
+}
+
+.movieTitle {
+    position: absolute;
+    // text-align: center;
+    top: 50%;
+    left: 5%;
+    color: white;
+    font-weight: 600;
+    pointer-events: none;
+}

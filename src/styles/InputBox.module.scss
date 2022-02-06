@@ -1,0 +1,53 @@
+.input {
+    padding: 0.5rem 0 0.5rem 2rem;
+    width: 100%;
+    border: transparent;
+    border-radius: 0.2rem;
+    background-image: url(../assets/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: 0.4rem 0.4rem;
+}
+
+.dropdownContainer {
+    position: relative;
+    width: 20%;
+}
+
+.dropdownMenu {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    z-index: 99;
+    top: 2rem;
+    background-color: white;
+    padding: 0.1rem 0 0.1rem;
+    border-radius: 0 0 0.2rem 0.2rem;
+    box-shadow: 0 0.1rem 0.2rem 0.05rem rgb(0, 0, 0);
+}
+
+.hiddenMenu {
+    display: none;
+}
+
+.dropdownContent {
+    z-index: 99;
+    border-top: 0.1rem solid black;
+}
+
+@media (max-width: 1200px) {
+    .dropdownContainer {
+        width: 25%;
+    }
+}
+
+@media (max-width: 950px) {
+    .dropdownContainer {
+        width: 35%;
+    }
+}
+
+@media (max-width: 720px) {
+    .dropdownContainer {
+        width: 50%;
+    }
+}

@@ -1,0 +1,6 @@
+@import './Mixins.scss';
+
+.container {
+    @include flexWithDir(column);
+    @include flexCenter();
+}

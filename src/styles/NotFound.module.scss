@@ -1,0 +1,7 @@
+@import './Mixins.scss';
+
+.container {
+    @include flexCenter();
+    @include flexWithDir(column);
+    @include fullScreen();
+}
